@@ -2,7 +2,7 @@
 
 # input
 
-ingresos = int(input("¿Cuáles son sus ingresos mensuales?: "))
+Ingresos = int(input("¿Cuáles son sus ingresos mensuales?: "))
 
 # processing
 
