@@ -2,7 +2,7 @@
 
 # input
 
-ingresos = int(input("¿Cuáles son sus ingresos mensuales?: "))
+Ingresos = int(input("¿Cuáles son sus ingresos mensuales?: "))
 
 # processing
 
@@ -14,6 +14,6 @@ if ingresos > 945200:
         msj = ("Lo sentimos, su préstamo ha sido denegado")
 else:
     msj = ("Lo sentimos, su préstamo ha sido denegado")
-    
+
 #output
 print (msj)
