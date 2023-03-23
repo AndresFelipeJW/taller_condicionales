@@ -1,17 +1,18 @@
-def solicitar_prestamo(ingresos_anuales, deudas):
-    """
-    Función que recibe los ingresos anuales y deudas de un cliente
-    y determina si es elegible para un préstamo bancario.
+# Programa para realizar un préstamo bancario
 
-    Args:
-        ingresos_anuales (float): Ingresos anuales del cliente
-        deudas (float): Deudas actuales del cliente
+# input
 
-    Returns:
-        str: Si el cliente es elegible para un préstamo bancario
-             o no.
-    """
-    if ingresos_anuales > 945200 and deudas == 0:
-        return "Usted es elegible para un préstamo bancario."
+ingresos = int(input("¿Cuáles son sus ingresos mensuales?: "))
+
+# processing
+
+if ingresos > 945200:
+    deudas = int(input("¿Cuántas deudas tiene actualmente?: "))
+    if deudas == 0:
+        msj =("¡Felicidades, su préstamo ha sido aprobado!")
     else:
-        return "Lo siento, no es elegible para un préstamo bancario en este momento."
+        msj = ("Lo sentimos, su préstamo ha sido denegado")
+else:
+    msj = ("Lo sentimos, su préstamo ha sido denegado")
+#output
+print (msj)
